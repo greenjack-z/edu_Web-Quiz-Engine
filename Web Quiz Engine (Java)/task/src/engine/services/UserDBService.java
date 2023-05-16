@@ -37,7 +37,7 @@ public class UserDBService {
         user.setEmail(userDTO.email());
         user.setPassword(userDTO.password());
         user.setRole("ROLE_USER");
-        userRepository.saveAndFlush(user);
+        userRepository.save(user);
     }
 
 }

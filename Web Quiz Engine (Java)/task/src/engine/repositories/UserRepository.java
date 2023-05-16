@@ -9,6 +9,4 @@ public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findUserByEmail(String email);
 
     boolean existsUserByEmail(String email);
-
-    User saveAndFlush(User user);
 }
